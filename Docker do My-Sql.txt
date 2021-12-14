@@ -1,0 +1,23 @@
+docker pull mysql
+
+
+#docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+
+docker run -p 3306:3306 --name root -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+
+
+-------------- Comandos Docker
+
+Acessar o my-sql
+winpty docker exec -it 244d54c50461 bash
+
+mysql -u root -p
+Senha: root
+
+--criar o banco
+create database spring_batch;
+SHOW DATABASES;
+use spring_batch;
+show tables;
+select * from BATCH_JOB_EXECUTION;
