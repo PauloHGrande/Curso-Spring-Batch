@@ -1,0 +1,14 @@
+2022-01-03 16:58:08,192 INFO c.u.q.QuintoProjetoSpringBatchApplication [main] Starting QuintoProjetoSpringBatchApplication using Java 15.0.2 on CP1782 with PID 6520 (C:\Projetos\Curso-Spring-Batch\Quinto-Projeto\quintoProjetoSpringBatch\target\classes started by phg in C:\Projetos\Curso-Spring-Batch\Quinto-Projeto\quintoProjetoSpringBatch)
+2022-01-03 16:58:08,194 INFO c.u.q.QuintoProjetoSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2022-01-03 16:58:08,552 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2022-01-03 16:58:08,701 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-01-03 16:58:09,011 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-01-03 16:58:09,175 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2022-01-03 16:58:09,310 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2022-01-03 16:58:09,383 INFO c.u.q.QuintoProjetoSpringBatchApplication [main] Started QuintoProjetoSpringBatchApplication in 1.522 seconds (JVM running for 2.214)
+2022-01-03 16:58:09,490 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlaJob]] launched with the following parameters: [{}]
+2022-01-03 16:58:09,554 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeOlaStep]
+2022-01-03 16:58:09,612 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeOlaStep] executed in 57ms
+2022-01-03 16:58:09,658 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlaJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 133ms
+2022-01-03 16:58:09,663 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-01-03 16:58:09,676 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
