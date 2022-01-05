@@ -20,7 +20,7 @@ public class ArquivoLarguraFixaJobConfig {
 		return jobBuilderFactory
 				.get("arquivoLarguraFixaJob")
 				.start(leituraArquivoLarguraFixaStep)
-				.incrementer(new RunIdIncrementer())
+				//.incrementer(new RunIdIncrementer())
 				.build();
 	}
 }

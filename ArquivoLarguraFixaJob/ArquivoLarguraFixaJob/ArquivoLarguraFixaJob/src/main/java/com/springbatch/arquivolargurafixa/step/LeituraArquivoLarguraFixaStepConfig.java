@@ -20,7 +20,7 @@ public class LeituraArquivoLarguraFixaStepConfig {
 			ItemWriter<Cliente> leituraArquivoLarguraFixaWriter) {
 		return stepBuilderFactory
 				.get("leituraArquivoLarguraFixaStep")
-				.<Cliente, Cliente>chunk(1)
+				.<Cliente, Cliente>chunk(4)  // aqui é numero de transação que é criada.
 				.reader(leituraArquivoLarguraFixaReader)
 				.writer(leituraArquivoLarguraFixaWriter)
 				.build();
